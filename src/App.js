@@ -2,7 +2,7 @@ import React from "react";
 // screens
 import Lab1 from "./screens/Lab1";
 import Lab2 from "./screens/Lab2";
-import Lab3 from "./screens/Lab3";
+import Lab5 from "./screens/Lab5";
 // ROUTE
 import { Switch, Route } from "react-router-dom";
 
@@ -19,8 +19,8 @@ function App() {
         <Route path="/lab2">
           <Lab2 />
         </Route>
-        <Route path="/lab3">
-          <Lab3 />
+        <Route path="/lab5">
+          <Lab5 />
         </Route>
       </Switch>
     </div>

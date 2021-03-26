@@ -16,3 +16,30 @@
    - TE:
      - chỉ sự mở rộng nào mà transfer-coding đang muốn chấp nhận trong phản hồi và có hoặc không nó đang muốn chấp nhận các trường trailer trong một transfer-coding được đóng khối.
      - Nếu giá trị trường TE là trống hoặc không trường TE nào hiện diện, thì khi đó chỉ có transfer-coding được đóng khối (chunked). Một thông báo với không transfer-coding là luôn luôn có thể chấp nhận.
+
+# Lab8. Tạo bằng tay một tài liệu XML để chứa danh sách sinh viên của lớp.
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/xsl' href='cgpa.xsl'?>
+<lop>
+   <student>
+      <mssv> 001 </mssv>
+      <ten> Duy </ten>
+      <ngaysinh> 21-10-1999 </ngaysinh>
+      <diemtong> 9 </diemtong>
+   </student>
+   <student>
+      <mssv> 002 </mssv>
+      <ten> Du </ten>
+      <ngaysinh> 1-10-1998 </ngaysinh>
+      <diemtong> 5.4 </diemtong>
+   </student>
+   <student>
+      <mssv> 003 </mssv>
+      <ten> Dy </ten>
+      <ngaysinh> 21-10-1919 </ngaysinh>
+      <diemtong> 5.9 </diemtong>
+   </student>
+</lop>
+```
