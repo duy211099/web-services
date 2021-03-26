@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+// screens
+import Lab1 from "./screens/Lab1";
+import Lab2 from "./screens/Lab2";
+import Lab3 from "./screens/Lab3";
+// ROUTE
+import { Switch, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Switch>
+        <Route path="/" exact>
+          <Lab1 />
+        </Route>
+        <Route path="/lab1">
+          <Lab1 />
+        </Route>
+        <Route path="/lab2">
+          <Lab2 />
+        </Route>
+        <Route path="/lab3">
+          <Lab3 />
+        </Route>
+      </Switch>
     </div>
   );
 }
